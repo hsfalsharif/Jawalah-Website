@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: #ac1a25;
+}
+
+.heading {
+    color: #002535;
+    font-family: 'Ara Hamah AlHorra';
+    font-size: 70px;
+}
+
+section {
+    color: #efe8be;
+}
+
+@font-face {
+    font-family: 'Ara Hamah AlHorra';
+    src: url('AraHamahAlHorra-Regular.eot');
+    src: url('AraHamahAlHorra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AraHamahAlHorra-Regular.woff2') format('woff2'),
+        url('AraHamahAlHorra-Regular.woff') format('woff'),
+        url('AraHamahAlHorra-Regular.ttf') format('truetype'),
+        url('AraHamahAlHorra-Regular.svg#AraHamahAlHorra-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
