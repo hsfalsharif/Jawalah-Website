@@ -1,16 +1,33 @@
 body {
     text-align: center;
     background-color: #ac1a25;
+    direction: rtl;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 .heading {
     color: #002535;
     font-family: 'Ara Hamah AlHorra';
-    font-size: 70px;
+    
 }
 
 section {
     color: #efe8be;
+    border: solid;
+}
+
+p {
+    position: relative;
+    width: 50%;
+    right: 25%;
+    text-align: justify;
 }
 
 @font-face {
