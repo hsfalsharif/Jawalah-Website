@@ -28,6 +28,7 @@ p {
     width: 50%;
     right: 25%;
     text-align: justify;
+    text-emphasis: solid;
 }
 
 @font-face {
