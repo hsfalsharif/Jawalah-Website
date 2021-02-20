@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 body {
     text-align: center;
     background-color: #ac1a25;
@@ -18,9 +20,15 @@ h2 {
     
 }
 
+#content {
+    background-color: #dcdcdc;
+    margin: 0;
+}
+
 section {
-    color: #efe8be;
-    border: solid;
+    color: #002535;
+    border: solid; 
+    /* Border to be removed later */
 }
 
 p {
@@ -31,14 +39,62 @@ p {
     text-emphasis: solid;
 }
 
+footer {
+    height: 20vh;
+    background-color: #1f1f1f;
+}
+
+#foot-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#foot-content #social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#instagram {
+    background-image: url("media/socialmedia/instagram.svg");
+}
+
+#twitter {
+    background-image: url("media/socialmedia/twitter.svg");
+}
+
+#youtube {
+    background-image: url("media/socialmedia/youtube.svg");
+}
+
+#soundcloud {
+    background-image: url("media/socialmedia/soundcloud.svg");
+}
+
+#linkedin {
+    background-image: url("media/socialmedia/linkedin.svg");
+}
+
+#foot-content #filler {
+    width: 70%;
+}
+
 @font-face {
     font-family: 'Ara Hamah AlHorra';
-    src: url('AraHamahAlHorra-Regular.eot');
-    src: url('AraHamahAlHorra-Regular.eot?#iefix') format('embedded-opentype'),
-        url('AraHamahAlHorra-Regular.woff2') format('woff2'),
-        url('AraHamahAlHorra-Regular.woff') format('woff'),
-        url('AraHamahAlHorra-Regular.ttf') format('truetype'),
-        url('AraHamahAlHorra-Regular.svg#AraHamahAlHorra-Regular') format('svg');
+    src: url('fonts/AraHamahAlHorra-Regular.eot');
+    src: url('fonts/AraHamahAlHorra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AraHamahAlHorra-Regular.woff2') format('woff2'),
+        url('fonts/AraHamahAlHorra-Regular.woff') format('woff'),
+        url('fonts/AraHamahAlHorra-Regular.ttf') format('truetype'),
+        url('fonts/AraHamahAlHorra-Regular.svg#AraHamahAlHorra-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
