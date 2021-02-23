@@ -1,17 +1,25 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     text-align: center;
-    background-color: #ac1a25;
+    background-color: #FFF;
     direction: rtl;
+    margin: 0;
 }
 
 h1 {
     font-size: 100px;
+    margin: 0;
 }
 
 h2 {
     font-size: 40px;
+}
+
+#title {
+    background-color: #efe8be;
 }
 
 .heading {
@@ -21,7 +29,7 @@ h2 {
 }
 
 #content {
-    background-color: #dcdcdc;
+    background-color: #FFF;
     margin: 0;
 }
 
