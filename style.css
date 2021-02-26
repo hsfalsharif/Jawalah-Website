@@ -54,6 +54,7 @@ nav ul li {
 nav ul li:hover {
     background-color:#efe8be;
     color: #002535;
+    cursor: pointer;
 }
 
 #content {
