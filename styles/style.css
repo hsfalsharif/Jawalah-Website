@@ -2,19 +2,32 @@
     font-size: 16px;
     box-sizing: border-box;
     font-family: 'Ara Hamah AlHorra';
-    --text-primary: #002535;
-    --text-secondary: #efe8be;
-    --bg-primary: #efe8be;
-    --bg-secondary: #ac1a25;
-    --bg-tertiary: #002535;
+    --text-primary: 0, 37, 53;
+    --text-secondary: 239, 232, 190;
+    --bg-primary: 239, 232, 190;
+    --bg-secondary: 172, 26, 37;
+    --bg-tertiary: 0, 37, 53;
 }
 
 body {
     text-align: center;
-    background-color: var(--bg-primary);
+    background-color: rgb(var(--bg-primary));
     direction: rtl;
     margin: 0;
+    padding: 0;
 }
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgb(var(--bg-secondary));
+  }
 
 h1 {
     font-size: 15vh;
@@ -23,31 +36,35 @@ h1 {
 
 h2 {
     font-size: 8vh;
+    color: rgb(var(--text-secondary));
 }
 
 h3 {
     font-size: 6vh;
 }
 
-#title {
-    background-color: var(--bg-secondary);
-}
-
-.heading {
-    color: #002535;
-    font-family: 'Ara Hamah AlHorra';
-    
+#landing {
+    background-image: 
+    linear-gradient(to bottom, rgba(var(--bg-primary), 0.32), rgba(var(--bg-secondary), 0.65)),
+    url('../media/bg-landing.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    /* z-index: -1; */
 }
 
 nav {
-    background-color: var(--bg-tertiary);
-    color: var(--text-secondary);
+    background: transparent;
+    color: rgb(var(--text-secondary));
     margin: 0;
+    width: 50%;
     height: fit-content;
 }
 
 nav ul {
     margin: inherit;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,9 +80,15 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color:var(--text-secondary);
-    color: var(--text-primary);
+    background-color: rgba(var(--text-secondary), 0.3);
+    color: rgb(var(--text-primary));
     cursor: pointer;
+}
+
+.heading {
+    color: #002535;
+    font-family: 'Ara Hamah AlHorra';
+    
 }
 
 #content {
