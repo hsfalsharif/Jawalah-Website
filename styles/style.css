@@ -1,25 +1,36 @@
-* {
+:root {
+    font-size: 16px;
     box-sizing: border-box;
+    font-family: 'Ara Hamah AlHorra';
+    --text-primary: #002535;
+    --text-secondary: #efe8be;
+    --bg-primary: #efe8be;
+    --bg-secondary: #ac1a25;
+    --bg-tertiary: #002535;
 }
 
 body {
     text-align: center;
-    background-color: #efe8be;
+    background-color: var(--bg-primary);
     direction: rtl;
     margin: 0;
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 15vh;
     margin: 0;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 8vh;
+}
+
+h3 {
+    font-size: 6vh;
 }
 
 #title {
-    background-color: #ac1a25;
+    background-color: var(--bg-secondary);
 }
 
 .heading {
@@ -29,8 +40,8 @@ h2 {
 }
 
 nav {
-    background-color: #002535;
-    color: #efe8be;
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
     margin: 0;
     height: fit-content;
 }
@@ -52,18 +63,18 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color:#efe8be;
-    color: #002535;
+    background-color:var(--text-secondary);
+    color: var(--text-primary);
     cursor: pointer;
 }
 
 #content {
-    background-color: #efe8be;
     margin: 0;
 }
 
 section {
-    color: #002535;
+    color: var(--text-primary);
+    min-height: fit-content;
     /* border: solid;  */
     /* Border to be removed later */
 }
@@ -101,23 +112,23 @@ footer {
 }
 
 #instagram {
-    background-image: url("media/socialmedia/instagram.svg");
+    background-image: url("../media/socialmedia/instagram.svg");
 }
 
 #twitter {
-    background-image: url("media/socialmedia/twitter.svg");
+    background-image: url("../media/socialmedia/twitter.svg");
 }
 
 #youtube {
-    background-image: url("media/socialmedia/youtube.svg");
+    background-image: url("../media/socialmedia/youtube.svg");
 }
 
 #soundcloud {
-    background-image: url("media/socialmedia/soundcloud.svg");
+    background-image: url("../media/socialmedia/soundcloud.svg");
 }
 
 #linkedin {
-    background-image: url("media/socialmedia/linkedin.svg");
+    background-image: url("../media/socialmedia/linkedin.svg");
 }
 
 #foot-content #filler {
@@ -126,12 +137,12 @@ footer {
 
 @font-face {
     font-family: 'Ara Hamah AlHorra';
-    src: url('fonts/AraHamahAlHorra-Regular.eot');
-    src: url('fonts/AraHamahAlHorra-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/AraHamahAlHorra-Regular.woff2') format('woff2'),
-        url('fonts/AraHamahAlHorra-Regular.woff') format('woff'),
-        url('fonts/AraHamahAlHorra-Regular.ttf') format('truetype'),
-        url('fonts/AraHamahAlHorra-Regular.svg#AraHamahAlHorra-Regular') format('svg');
+    src: url('../fonts/AraHamahAlHorra-Regular.eot');
+    src: url('../fonts/AraHamahAlHorra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AraHamahAlHorra-Regular.woff2') format('woff2'),
+        url('../fonts/AraHamahAlHorra-Regular.woff') format('woff'),
+        url('../fonts/AraHamahAlHorra-Regular.ttf') format('truetype'),
+        url('../fonts/AraHamahAlHorra-Regular.svg#AraHamahAlHorra-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
