@@ -60,7 +60,20 @@ nav {
     margin: 0;
     width: 50%;
     height: fit-content;
+    position: fixed;
+
+    animation: navbar-extend 0.5s linear; /* name duratoin mode */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
 }
+
+@keyframes navbar-extend {
+    to {
+      width: 100%;
+    }
+  }
 
 nav ul {
     margin: inherit;

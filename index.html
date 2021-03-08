@@ -5,6 +5,19 @@
     <title>KFUPM Jawalah</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
+    <script>
+        window.addEventListener('scroll', () => {
+            let scrollPercent = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
+            document.body.style.setProperty('--scroll', scrollPercent);
+            let nav = document.getElementsByTagName('nav')[0]
+            if(scrollPercent >= 0.5) {
+                nav.style.setProperty('background-color', 'rgba(172, 26, 37, 1)');
+            }
+            else {
+                nav.style.setProperty('background-color', 'transparent');
+            }
+        }, false);
+    </script>
 </head>
 
 <body>
