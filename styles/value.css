@@ -6,7 +6,6 @@
 .jawalah-values {
     min-height: fit-content;
 }
-
 .jawalah-values img {
     width: 30%;
     height: 30%;
@@ -30,3 +29,4 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+

@@ -10,8 +10,9 @@
             let scrollPercent = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
             document.body.style.setProperty('--scroll', scrollPercent);
             let nav = document.getElementsByTagName('nav')[0]
-            if(scrollPercent >= 0.5) {
-                nav.style.setProperty('background-color', 'rgba(172, 26, 37, 1)');
+            console.log(window.innerHeight);
+            if(scrollPercent > 0.50) {
+                nav.style.setProperty('background-color', 'rgba(var(--bg-secondary), 1)');
             }
             else {
                 nav.style.setProperty('background-color', 'transparent');
@@ -24,18 +25,19 @@
     <!-- Each section has is separated into its own div or HTML tag if available -->
     <!-- navigation bar to be added -->
     <!-- <div id="title"><h1 class="heading">جوالة البترول</h1></div>  -->
-    <div id="landing"> 
-        <nav>
-            <ul>
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-            <li>item4</li>
-            <li>item5</li>
-            <li>item6</li>
-            </ul>
-        </nav>
-        <!-- <h2> جوالة البترول </h2> -->
+    <nav>
+        <ul>
+        <li>تعريف بالنادي</li>
+        <li>الأنشطة الداخلية</li>
+        <li>الأنشطة الخارجية</li>
+        <li>معسكرات النادي</li>
+        <li>مُخرجات الجوالة</li>
+        <li>أعلام الجوالة</li>
+        </ul>
+    </nav>
+    <div id="landing">
+        <h2> بجوالة الفهد ... <br> يحيا العطاء! </h2>
+        <div class="scroll-icon"></div>
     </div>
         <div id="content">
         <section>
