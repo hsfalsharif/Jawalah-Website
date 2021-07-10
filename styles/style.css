@@ -249,4 +249,24 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    #about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #about-us div h2 {
+        margin-left: 5vw;
+    }
+
+    .img {
+        height: 40vw;
+        width: 40vw;
+        background-image: url('../media/hurdle-jump.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
