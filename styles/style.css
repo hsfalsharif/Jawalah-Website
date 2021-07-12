@@ -175,6 +175,10 @@ section {
     background-color: rgb(var(--jawalah-blue));
 }
 
+#vision h2 {
+    outline: 2px black;
+}
+
 p {
     position: relative;
     width: 50%;
@@ -268,5 +272,18 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    #vision {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lightbox h2, .lightbox h3 {
+        color: rgb(var(--jawalah-beige));
+    }
+
+    .lightbox {
+        width: 50vw;
     }
 }
