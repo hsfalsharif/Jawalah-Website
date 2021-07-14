@@ -75,7 +75,7 @@ h3 {
 .scroll-icon {
 	width: 60px;
 	height: 60px;
-	border: 2px solid rgb(var(--jawalah-beige));
+	border: 1px solid rgb(var(--jawalah-beige));
 	border-radius: 50%;
 	position: absolute;
     bottom: 2rem;
@@ -90,8 +90,8 @@ h3 {
     left: 18px;
     width: 18px;
     height: 18px;
-    border-left: 2px solid rgb(var(--jawalah-beige));
-    border-bottom: 2px solid rgb(var(--jawalah-beige));
+    border-left: 1px solid rgb(var(--jawalah-beige));
+    border-bottom: 1px solid rgb(var(--jawalah-beige));
     transform: rotate(-45deg);
 }
 
@@ -175,8 +175,8 @@ section {
     background-color: rgb(var(--jawalah-blue));
 }
 
-#vision h2 {
-    outline: 2px black;
+#vision h2, h3 {
+    text-shadow: 3px 3px 2px #000;
 }
 
 p {
