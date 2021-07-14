@@ -12,7 +12,7 @@
             let nav = document.getElementsByTagName('nav')[0]
             console.log(window.innerHeight);
             if(scrollPercent > 0.50) {
-                nav.style.setProperty('background-color', 'rgba(var(--bg-secondary), 1)');
+                nav.style.setProperty('background-color', 'rgba(var(--jawalah-red), 1)');
             }
             else {
                 nav.style.setProperty('background-color', 'transparent');
@@ -22,9 +22,7 @@
 </head>
 
 <body>
-    <!-- Each section has is separated into its own div or HTML tag if available -->
-    <!-- navigation bar to be added -->
-    <!-- <div id="title"><h1 class="heading">جوالة البترول</h1></div>  -->
+    
     <nav>
         <ul>
         <li>تعريف بالنادي</li>
@@ -39,32 +37,39 @@
         <h2> بجوالة الفهد ... <br> يحيا العطاء! </h2>
         <div class="scroll-icon"></div>
     </div>
-        <div id="content">
-        <section>
-            <h2 class="heading">Call to Action</h2>
+    <div id="content">
+        <section id="about-us">
+        <div>
+            <h2 class="heading">من نحن؟</h2>
             <p>Jawalah Member: Login</p>
             <p>Visitor: Find out more about KFUPM Jawalah => Links to Definition page</p>
+        </div>
+        <div class="img"></div>
         </section>
+        
     
-        <section>
-            <h2 class="heading">Video here</h2>
-            <p>Insert Video</p>
-        </section>
     
-        <section>
-            <h2 class="heading">الرؤية و الرسالة</h2>
+        <section id="vision">
+
+            <div class="lightbox" id="visionbox">
+                <h2 class="heading">الرؤية</h2>
+                <h3 class="heading">الرؤية للعضو</h3>
+                <p>أن يكون قائدًا في مجاله، مؤثرًا في محيطه، متوازنًا في شخصيته، واعيًا بذاته، يملك رؤيةً ورسالةً في حياته.</p>
     
-            <h3 class="heading">الرؤية للعضو</h3>
-            <p>أن يكون قائدًا في مجاله، مؤثرًا في محيطه، متوازنًا في شخصيته، واعيًا بذاته، يملك رؤيةً ورسالةً في حياته.</p>
-    
-            <h3 class="heading">الرؤية للنادي</h3>
-            <p>أن يكون الأول بتكامل الأنشطة وتنوع البرامج وتقديمها باحترافية وإبداع على مستوى الجامعة.</p>
-            <p>أن يكون مشاركًا رائدًا في المجال الكشفي محليًا ودوليًا.</p>
-    
-            <h3 class="heading">الرسالة</h3>
-            <p>نحن نادي عشائر الجوالة نشاط طلابي كشفي ذو طابع تربويّ تطوعي بجامعة الملك فهد للبترول والمعادن، نسعى للارتقاء
+                <h3 class="heading">الرؤية للنادي</h3>
+                <p>أن يكون الأول بتكامل الأنشطة وتنوع البرامج وتقديمها باحترافية وإبداع على مستوى الجامعة.</p>
+                <p>أن يكون مشاركًا رائدًا في المجال الكشفي محليًا ودوليًا.</p>
+            </div>
+
+            <h2>و</h2>
+
+            <div class="lightbox">
+                <h2 class="heading">الرسالة</h2>
+                <p>نحن نادي عشائر الجوالة نشاط طلابي كشفي ذو طابع تربويّ تطوعي بجامعة الملك فهد للبترول والمعادن، نسعى للارتقاء
                 بالمجتمع وذلك بالاستثمار في الإنسان وصقل شخصيته وتعزيز هوّيته والسموّ بروحه، وفق المنهج الكشفي السعودي
                 (جمعية الكشافة العربية السعودية).</p>
+            </div>
+
         </section>
     
         <section>
